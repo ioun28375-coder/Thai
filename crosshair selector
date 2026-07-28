@@ -1,0 +1,13 @@
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local mouse = player:GetMouse()
+
+local CROSSHAIRS = {
+    Dot    = "rbxassetid://13107823",  -- เป้าจุด
+    Cross  = "rbxassetid://6030382803", -- เป้ากากบาท
+    Circle = "rbxassetid://147818318",  -- เป้าวงกลม
+    Reset  = ""                        -- คืนค่าเป้าเดิม
+}
+
+
+mouse.Icon = CROSSHAIRS.Cross
